@@ -6,11 +6,12 @@ let isMobile = window.matchMedia("only screen and (max-width: 700px)").matches;
 
 if (isMobile) {
   map.src =
-    "https://maps.google.com/maps?q=Hora%20Matky%20Bo%C5%BE%C3%AD%20Hede%C4%8D&t=&z=12&ie=UTF8&iwloc=&output=embed";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4243.2124524855!2d15.754836777684336!3d50.04996287151858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c332aba288ab5%3A0xe1d6c2f81956b154!2sRestaurace%20na%20Palub%C4%9B!5e1!3m2!1scs!2scz!4v1775783771532!5m2!1scs!2scz";
 } else {
   map.src =
-    "https://maps.google.com/maps?q=Hora%20Matky%20Bo%C5%BE%C3%AD%20Hede%C4%8D&t=&z=14&ie=UTF8&iwloc=&output=embed";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4243.2124524855!2d15.754836777684336!3d50.04996287151858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470c332aba288ab5%3A0xe1d6c2f81956b154!2sRestaurace%20na%20Palub%C4%9B!5e1!3m2!1scs!2scz!4v1775783771532!5m2!1scs!2scz";
 }
+
 
 acomodationRadios.forEach((radio) => {
   radio.onclick = (e) => {
