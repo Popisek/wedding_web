@@ -1,0 +1,668 @@
+html {
+  scroll-behavior: smooth;
+  margin: auto;
+}
+body {
+  background-color: #f8fff4;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+i {
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 37px;
+  font-weight: 700;
+  /* font-family: "Mali", cursive; */
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+}
+
+h3 {
+  padding: 10px;
+}
+
+h5 {
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+p {
+  font-size: 17px;
+}
+
+/* NAVIGATION */
+
+.navbar {
+  background-color: #323131;
+}
+
+.nav-link {
+  font-family: "Mali", cursive;
+  font-size: 25px;
+  color: #c09951;
+}
+.nav-link:hover {
+  color: #ffdd9e;
+}
+
+.navbar-expand-sm .navbar-colapse {
+  justify-content: space-between;
+}
+
+hr {
+  padding: 0;
+  margin: auto;
+  width: 70%;
+  border-style: none;
+  border-top-style: solid;
+  border-width: 2px;
+  border-color: #c09951;
+}
+
+/* MAIN PICTURE */
+
+#main-section {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* bylo 100vh nebo 110vh, tohle ji opticky zmenší */
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  object-position: center 35%; /* doladění výřezu */
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(50, 49, 49, 0.95) 5%,
+    rgba(50, 49, 49, 0.65) 30%,
+    rgba(50, 49, 49, 0.08) 55%
+  );
+  z-index: 2;
+}
+
+#main-section hr,
+#main-section .main-heading,
+#main-section .wedding-date {
+  position: relative;
+  z-index: 3;
+}
+
+.main-heading {
+  color: #c09951;
+  text-align: center;
+  padding-top: 4%;
+  font-family: "Euphoria Script", cursive;
+  font-size: 120px;
+  opacity: 0;
+  animation: appear 1.2s ease-in 0.7s forwards;
+}
+
+.wedding-date {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #c09951;
+  font-size: 45px;
+  font-weight: 100;
+  padding: 0;
+  opacity: 0;
+  animation: appear 1.2s ease-in 1.5s forwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    top: 100px;
+  }
+  100% {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  top: -30px;
+  background-color: #c09951;
+  text-align: justify;
+  padding-top: 30px;
+}
+
+/* #about-section p {
+  font-style: italic;
+} */
+
+.t-img {
+  width: 140%;
+  border-radius: 50%;
+  position: relative;
+  left: -30%;
+  -webkit-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  -moz-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+}
+
+.about-text-right {
+  margin: auto 40px;
+}
+
+.p-img-mobile {
+  display: none;
+}
+
+.p-img {
+  width: 140%;
+  border-radius: 50%;
+  position: relative;
+  -webkit-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  -moz-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+}
+
+.about-text-left {
+  margin: auto 0 30px auto;
+}
+
+.about-section-divider {
+  text-align: center;
+  margin: 0 20px 30px;
+}
+.fa-pagelines {
+  font-size: 50px;
+}
+
+.how-we-met {
+  padding: 0 50px;
+}
+
+.how-we-met h4 {
+  margin-bottom: 10px;
+}
+
+.how-we-met i {
+  font-size: 22px;
+}
+
+.how-we-met p {
+  font-style: italic;
+}
+
+.how-we-met-images {
+  margin: auto;
+  padding: 20px;
+}
+
+.how-we-met img {
+  width: 70%;
+  margin: auto;
+  display: block;
+  border-radius: 5%;
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.images {
+  margin: auto;
+  text-align: center;
+}
+
+.img-left {
+  width: 120%;
+  position: relative;
+  left: -20%;
+  border-radius: 5%;
+}
+
+.img-middle {
+  width: 90%;
+  position: relative;
+  top: 70px;
+  margin: auto;
+  border-radius: 5%;
+}
+
+.img-right {
+  width: 120%;
+  border-radius: 5%;
+}
+
+/* WEDDING DAY SECTION */
+
+#wedding-day-section {
+  margin-top: 70px;
+  width: 100%;
+  position: relative;
+  background-color: #2ca58d;
+  text-align: center;
+  padding: 30px;
+}
+
+#wedding-day-section a {
+  color: #323131;
+}
+
+#wedding-day-section a:hover {
+  color: #515151;
+}
+
+.mapa {
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px 0;
+}
+
+#gmap_canvas {
+  width: 95%;
+  height: 600px;
+}
+
+/* HARMONOGRAM SECTION */
+
+#harmonogram-section {
+  background-color: #c09951;
+  padding: 30px;
+  margin-top: 70px;
+  text-align: center;
+}
+
+.harmonogram {
+  margin: auto;
+  width: 40%;
+  text-align: left;
+  border: 2px solid #323131;
+  padding: 20px;
+  -webkit-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  -moz-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+}
+
+.program-icon {
+  font-size: 50px;
+}
+.program-hour {
+  display: inline;
+  font-size: 30px;
+}
+
+/* GIFTS SECTION */
+#gifts-section {
+  margin-top: 70px;
+  background-color: #2ca58d;
+  text-align: center;
+  padding: 20px;
+}
+
+.gifts {
+  text-align: center;
+  margin: auto;
+  padding: 30px 40px 30px 40px;
+  text-align: justify;
+}
+
+.gift-icon {
+  margin: auto;
+  padding: 10px;
+  text-align: end;
+}
+
+.gift-icon i {
+  font-size: 80px;
+}
+
+/* CONTACTS SECTION */
+#contacts-section {
+  background-color: #c09951;
+  text-align: center;
+  margin-top: 70px;
+  padding: 20px;
+}
+
+.contacts {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-img {
+  width: 200px;
+  border-radius: 100%;
+  margin: 10px;
+  -webkit-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  -moz-box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+  box-shadow: 0px 3px 25px -2px rgba(50, 49, 49, 1);
+}
+
+.contacts p,
+h4 {
+  margin: 0;
+}
+
+.mobile-number {
+  margin-top: 5px;
+  display: block;
+}
+
+.mobile-number i {
+  font-size: 18px;
+  color: #323131;
+}
+
+/* GALLERY */
+#gallery-section {
+  background-color: #f8fff4;
+  margin: 70px 4% 0;
+}
+
+#gallery-section .col {
+  padding: 10px;
+}
+
+.gallery-img {
+  width: 100%;
+}
+
+/* CONFIRMATION FORM */
+
+#confirmation-section {
+  background-color: #2ca58d;
+  margin-top: 70px;
+  padding: 20px;
+}
+#confirmation-section p {
+  text-align: center;
+}
+
+.form {
+  width: 40%;
+  margin: 70px auto;
+}
+
+.form label {
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-check-input:checked {
+  background-color: #323131;
+  border-color: #323131;
+}
+
+.button {
+  width: 150px;
+  margin: auto;
+  display: block;
+  background-color: #323131;
+  border-color: #323131;
+}
+
+.button:hover {
+  background-color: #515151;
+  border-color: #515151;
+}
+
+footer {
+  margin: 70px auto 20px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* MOBIL */
+@media only screen and (max-width: 700px) {
+  p {
+    font-size: 13px;
+  }
+  hr {
+    display: none;
+  }
+  h2 {
+    font-size: 20px;
+    padding: 20px 0;
+  }
+  h3 {
+    font-size: 19px;
+  }
+
+  i {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+  .nav-link {
+    font-size: 12px;
+  }
+
+  .main-heading {
+    padding-top: 40px;
+    font-size: 55px;
+  }
+
+  .wedding-date {
+    font-size: 25px;
+  }
+
+  #about-section .row {
+    width: 80%;
+    margin: auto;
+  }
+
+  #about-section .row .col-sm-2 {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #about-section h4 {
+    font-size: 18px;
+  }
+
+  .t-img {
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    position: static;
+  }
+
+  .about-text-right {
+    margin: auto;
+    padding: 0 0 30px;
+  }
+
+  .about-text-left {
+    margin: auto;
+    padding: 0 0 10px;
+  }
+
+  .p-img-desktop {
+    display: none;
+  }
+  .p-img-mobile {
+    display: block;
+  }
+
+  .p-img {
+    width: 80%;
+    border-radius: 50%;
+    margin: auto;
+    text-align: center;
+    position: static;
+  }
+
+  .about-section-divider {
+    margin: 0 auto 10px;
+  }
+  .about-section-divider i {
+    font-size: 30px;
+  }
+
+  .how-we-met {
+    padding: 0;
+    width: 80%;
+    margin: auto;
+  }
+
+  .how-we-met i {
+    font-size: 15px;
+  }
+
+  .how-we-met-images {
+    padding: 0;
+    margin: 0;
+  }
+
+  .how-we-met img {
+    width: 100%;
+  }
+
+  .images {
+    text-align: center;
+    display: block;
+    padding: 0;
+  }
+
+  .img-mobile {
+    position: static;
+    padding: 0;
+    width: 100%;
+    border-radius: 10%;
+  }
+
+  .img-middle {
+    margin: 70px auto 40px;
+    width: 80%;
+  }
+
+  .img-right {
+    position: relative;
+    top: 30px;
+    width: 100%;
+  }
+
+  #wedding-day-section {
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
+
+  #wedding-day-section .col-sm-6 {
+    margin-top: 10px;
+    padding: 0 10px;
+  }
+
+  #wedding-day-section p {
+    text-align: justify;
+  }
+
+  .mapa {
+    margin: 20px auto;
+  }
+
+  #gmap_canvas {
+    height: 250px;
+  }
+
+  .harmonogram {
+    width: 100%;
+  }
+
+  .program-icon {
+    text-align: center;
+  }
+
+  .program-hour {
+    font-size: 21px;
+  }
+
+  #harmonogram-section {
+    margin-top: 30px;
+  }
+
+  #harmonogram-section i {
+    font-size: 40px;
+  }
+
+  #gifts-section {
+    margin-top: 30px;
+  }
+
+  .gifts {
+    width: 100%;
+    padding: 10px 10px 30px;
+  }
+
+  .gift-icon {
+    text-align: center;
+  }
+
+  .gift-icon i {
+    font-size: 50px;
+  }
+
+  #contacts-section {
+    margin-top: 30px;
+  }
+
+  .contact-img {
+    width: 170px;
+  }
+
+  .contacts .row :nth-child(2) {
+    margin-top: 20px;
+  }
+
+  #gallery-section {
+    margin: 30px 3%;
+  }
+
+  #confirmation-section {
+    margin-top: 30px;
+  }
+
+  #confirmation-section p {
+    text-align: justify;
+  }
+
+  .mobile-number i {
+    font-size: 15px;
+  }
+
+  .form {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .form-group {
+    font-size: 15px;
+  }
+
+  .form-control {
+    font-size: 13px;
+    margin: 5px;
+  }
+
+  footer {
+    margin: 30px auto 20px;
+  }
+}

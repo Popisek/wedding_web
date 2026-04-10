@@ -1,0 +1,27 @@
+{
+  "name": "svatebni-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "/srv/bin/primary_tech/node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prokne/svatebni-web.git"
+  },
+  "author": "Prokop Netusil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prokne/svatebni-web/issues"
+  },
+  "homepage": "https://github.com/prokne/svatebni-web#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
